@@ -15,10 +15,6 @@
                             <input type="text" class="form-control" id="title" value="{{$task->title}}" name="title" placeholder="Title">
                         </div>
                         <div class="form-group">
-                            <label for="sdate">Start Date</label>
-                            <input type="date" class="form-control" id="start" value="{{$task->created_at}}" name="start">
-                        </div>
-                        <div class="form-group">
                             <label for="edate">End Date</label>
                             <input type="date" class="form-control" id="end" value="{{$task->updated_at}}" name="end">
                         </div>

@@ -49,8 +49,8 @@ class TaskController extends Controller {
     }
 
     function updateTask( Request $req ) {
-        DB::update( 'update todos set title = ?, description = ?, created_at = ?, updated_at = ?
-                    where id = ?', [$req->title, $req->description, $req->start, $req->end, $req->id] );
+        DB::update( 'update todos set title = ?, description = ?,  updated_at = ?
+                    where id = ?', [$req->title, $req->description, $req->end, $req->id] );
         return redirect( '/' );
     }
 }
